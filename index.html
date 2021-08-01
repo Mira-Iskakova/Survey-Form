@@ -1,1 +1,99 @@
-<h1 id="title">Some text</h1>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            body {
+                background-color: #d7dcdd;
+                width: 600px;
+                margin: auto;
+                font-family: sans-serif;
+            }
+            label {
+                font-size: 20px;
+                display: block;
+                padding-bottom: 10px;
+                padding-top: 10px;
+            }
+            form {
+                background: darkblue;
+                opacity: 0.7;
+                color: white;
+                padding: 2.5rem 2.5rem;
+                border-radius: 2rem;
+                width: 500px;
+                margin: auto;
+            }
+            textarea, select {
+                display: block;
+                width: 95%;
+                padding-bottom: 20px;
+            }
+            .submit-button {
+                display: block;
+                width: 95%;
+                padding: 0.5rem;
+                background: green;
+                color: white;
+                border-radius: 4px;
+                cursor: pointer;
+                margin-top: 20px;
+            }
+            .input-area {
+                display: block;
+                width: 90%;
+                height: 2rem;
+                padding: 0.25rem 0.75rem;
+                background-color: #fff;
+                border: 1px solid;
+                border-radius: 0.25rem;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">
+            Harry Potter Houses Survey
+        </h1>
+        <p id="description">
+            <em>Fill out this survey and find out what house are you in.</em>
+        </p>
+        <form id="survey-form">
+            <label id="name-label">Name:</label> 
+            <input id="name" type="text" name="name" placeholder="Full Name" class="input-area" required><br>
+            <label id="email-label">Email:</label> 
+            <input id="email" type="email" name="email" placeholder="Email Address" class="input-area" required><br>
+            <label id="number-label">Age:</label> 
+            <input id="number" type="number" name="number" min="0" max="200" placeholder="Your Age" class="input-area" required><br>
+            
+            <label id="characters">Who is your favorite character?</label>
+            <select id="dropdown" name="characters">
+                <option disabled="" value="">Select a character</option>
+                <option value="harry">Harry Potter</option>
+                <option value="hermione">Hermione Granger</option>
+                <option value="ron">Ronald Weasley</option>
+            </select>
+            
+            <label id="recommend">Would you recommend reading/watching Harry Potter to your friend?</label>
+            <br>
+            <input type="radio" name="recommend" value="yes"> Yes<br>
+            <input type="radio" name="recommend" value="no"> No<br>
+            <br>
+
+            <label id="films">What is your favorite Harry Potter book/movie?</label>
+            <br>
+            <input type="checkbox" name="Harry Potter and the Philosopher's Stone" value="Harry Potter and the Philosopher's Stone"> Harry Potter and the Philosopher's Stone<br>
+            <input type="checkbox" name="Harry Potter and the Chamber of Secrets" value="Harry Potter and the Chamber of Secrets"> Harry Potter and the Chamber of Secrets<br>
+            <input type="checkbox" name="Harry Potter and the Prisoner of Azkaban" value="Harry Potter and the Prisoner of Azkaban"> Harry Potter and the Prisoner of Azkaban<br>
+            <input type="checkbox" name="Harry Potter and the Goblet of Fire" value="Harry Potter and the Goblet of Fire"> Harry Potter and the Goblet of Fire<br>
+            <input type="checkbox" name="Harry Potter and the Order of the Phoenix" value="Harry Potter and the Order of the Phoenix"> Harry Potter and the Order of the Phoenix<br>
+            <input type="checkbox" name="Harry Potter and the Half-Blood Prince" value="Harry Potter and the Half-Blood Prince"> Harry Potter and the Half-Blood Prince<br>
+            <input type="checkbox" name="Harry Potter and the Deathly Hallows – Part 1" value="Harry Potter and the Deathly Hallows – Part 1"> Harry Potter and the Deathly Hallows – Part 1<br>
+            <input type="checkbox" name="Harry Potter and the Deathly Hallows – Part 2" value="Harry Potter and the Deathly Hallows – Part 2"> Harry Potter and the Deathly Hallows – Part 2<br>
+            <br>
+
+            <textarea placeholder="Additional comments"></textarea>
+
+            <input id="submit" type="submit" value="Submit answers" class="submit-button">
+        </form>
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
